@@ -1,0 +1,28 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+
+
+# Главная страница
+def index(request):
+    template = "posts/index.html"
+    title = "Последние обновления на сайте"
+    head1 = "Последние обновления на сайте."
+    сontext = {"title": title, "head1": head1}
+    return render(request, template, сontext)
+
+
+# Страница c постами
+def group_list(request):
+    template = "posts/group_list.html"
+    title = "Лев Толстой – зеркало русской революции"
+    head1 = "Лев Толстой – зеркало русской революции."
+    p1 = "Группа тайных поклонников графа."
+    сontext = {"title": title, "head1": head1, "p1": p1}
+    return render(request, template, сontext)
+
+
+# В урл мы ждем парметр, и нужно его прередать в функцию для использования
+def group_posts(request, slug):
+    return HttpResponse(f"Пост номер {slug}")
