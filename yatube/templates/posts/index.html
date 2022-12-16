@@ -1,21 +1,17 @@
 {% extends 'base.html' %}
 
+{% block title %}
+  Последние обновления на сайте
+{% endblock %} 
+
 {% block content %}  
-  <!-- класс py-5 создает отступы сверху и снизу блока -->
-  <div class="container py-5">     
-    <h1>
-      {{title}}
-    </h1>
-    <br>
-    {% for post in posts %}
-      <ul>
-        <li>
-          Автор: {{ post.author.get_full_name }}
-        </li>
-        <li>
-          Дата публикации: {{ post.pub_date|date:"d E Y" }}
-        </li>
-      </ul>
+  <h1>
+    Последние обновления на сайте
+  </h1>
+  <br>
+  {% for post in posts %}
+    <article>
+      {% include 'includes/author.html' %}
       <p>
         {{ post.text }}
       </p>    
@@ -23,11 +19,10 @@
         <a href="{% url 'posts:group_list' post.group.slug %}">
           все записи группы
         </a>
-      {% endif %} 
-      {% if not forloop.last %}
-        <hr>
       {% endif %}
-    {% endfor %} 
-  <!-- под последним постом нет линии -->
-  </div>  
+    </article>   
+    {% if not forloop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %} 
 {% endblock %}
