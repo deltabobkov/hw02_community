@@ -1,14 +1,12 @@
 from django.shortcuts import get_object_or_404, render
 
-from constants import POSTS_NUMBER
+from constants import POSTS_PER_PAGE
 
 from .models import Group, Post
 
-# Create your views here.
-
 
 def index(request):
-    posts = Post.objects.all()[:POSTS_NUMBER]
+    posts = Post.objects.all()[:POSTS_PER_PAGE]
     context = {
         "posts": posts,
     }
@@ -17,7 +15,7 @@ def index(request):
 
 def group_posts(request, slug):
     group = get_object_or_404(Group, slug=slug)
-    posts = Post.objects.filter(group=group)[:POSTS_NUMBER]
+    posts = Post.objects.filter(group=group)[:POSTS_PER_PAGE]
     context = {
         "group": group,
         "posts": posts

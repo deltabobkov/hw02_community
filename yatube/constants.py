@@ -1,1 +1,1 @@
-POSTS_NUMBER: int = 10
+POSTS_PER_PAGE: int = 10
