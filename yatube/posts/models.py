@@ -33,3 +33,6 @@ class Post(models.Model):
         verbose_name = "post"
         verbose_name_plural = "posts"
         ordering = ["-pub_date"]
+
+    def __str__(self) -> str:
+        return self.text
