@@ -51,3 +51,7 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
+
+**Проект будет доступен по адресу:**  
+http://localhost/
+
