@@ -5,7 +5,8 @@
 ![SQLite](https://img.shields.io/badge/SQLite-313131?style=flat&logo=sqlite&logoColor=ffffff&labelColor=033b55)
 ![Visual Studio](https://img.shields.io/badge/VS%20Code-313131?style=flat&logo=visualstudiocode&logoColor=ffffff&labelColor=0098FF)
 
-## Проект Yatube — это платформа для публикаций (блог). На данном этапе реализовано отображение постов и их создание через админ-зону.
+## Проект Yatube — это платформа для публикаций (блог). 
+### На данном этапе реализовано отображение постов и их создание через админ-зону.
 
 ### Как запустить проект:
 
