@@ -1,11 +1,11 @@
-# Проект Сообщества для Yatube
+# Проект Yatube. Начало.
 
 ![Python](https://img.shields.io/badge/Python-313131?style=flat&logo=Python&logoColor=white&labelColor=306998)
 ![Django](https://img.shields.io/badge/Django-313131?style=flat&logo=django&labelColor=092e20)
 ![SQLite](https://img.shields.io/badge/SQLite-313131?style=flat&logo=sqlite&logoColor=ffffff&labelColor=033b55)
 ![Visual Studio](https://img.shields.io/badge/VS%20Code-313131?style=flat&logo=visualstudiocode&logoColor=ffffff&labelColor=0098FF)
 
-## Проект Yatube — это платформа для публикаций, блог. У пользователей должна быть возможность публиковать записи. 
+## Проект Yatube — это платформа для публикаций (блог). На данном этапе реализовано отображение постов и их создание через админ-зону.
 
 ### Как запустить проект:
 
